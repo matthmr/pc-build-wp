@@ -1,1 +1,255 @@
-
+{
+  "components": {
+    "meta":[
+      "mbd", "cpu", "ram", "ssd", "gpu", "psu", "coo", "cas", "pbd"
+    ],
+    "mbd":[
+      {
+        "name": "ASUS",
+        "specs": "AM4 Socket, DDR4-RAM support, AMD 1st gen, AMDB450 support, 256mb cache",
+        "price": "R$650",
+        "site": "amazon.com",
+        "url": "https://www.amazon.com/ASUS-ROG-B450-F-Gaming-Motherboard/dp/B08KH1M1H4/ref=mp_s_a_1_3?_encoding=UTF8&c=ts&dchild=1&keywords=Computer+Motherboards&qid=1622981309&s=pc&sr=1-3&ts_id=1048424",
+        "urlable": true
+      },
+      {
+        "name": "ASUS",
+        "specs": "AM4 Socket, DDR4-RAM & SDRAM support; 2 slots, 2400 mhz clock speed",
+        "price": "R$540",
+        "site": "amazon.com.br",
+        "url": "https://www.amazon.com.br/Placa-M%C3%A3e-Asus-A320M-K-BR-Preto/dp/B077FC7595/ref=sr_1_6?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=placa-m%C3%A3e&qid=1623071096&s=computers&sr=1-6",
+        "urlable": true
+      },
+      {
+        "name": "GIGABYTE",
+        "specs": "AM4 Socket, DDR4-RAM, AMDA320 chipset",
+        "price": "R$580",
+        "site": "amazon.com.br",
+        "url": "https://www.amazon.com.br/Placa-M%C3%A3e-Gigabyte-Micro-ATX/dp/B078KBKFZ6/ref=pd_aw_sbs_1/136-1755939-6748257?_encoding=UTF8&pd_rd_i=B078KBKFZ6&pd_rd_r=99e872b1-cdb9-4c49-ac23-3439ff026b21&pd_rd_w=dcsl7&pd_rd_wg=zTngR&pf_rd_p=04875f1f-7297-4829-8436-0fa2c33b1bad&pf_rd_r=7M0FTNQFRSNKGF97YM0B&psc=1&refRID=7M0FTNQFRSNKGF97YM0B",
+        "urlable": true
+      },
+      {
+        "name": "GALAX",
+        "specs": "AM4 Socket, DDR4-RAM 3600mhz clock speed",
+        "price": "R$550",
+        "site": "amazom.com.br",
+        "url": "https://www.amazon.com.br/gp/aw/d/B08DYFJH5C/ref=sspa_mw_detail_1?ie=UTF8&psc=1&pd_rd_i=B08DYFJH5Cp13NParams",
+        "urlable": true
+      }],
+    "cpu":[
+      {
+        "name": "AMD AM4 Ryzen3",
+        "specs": "1,25ghz clock speed, <b>INTEGRATED</b> GPU",
+        "price": "R$1.890",
+        "site": "amazon.com.br",
+        "url": "https://www.amazon.com.br/45-65W-YD3200C5FHBOX-AMD-RYZEN-3200G/dp/B07STGHZK8/ref=pd_aw_sim_4?_encoding=UTF8&pd_rd_i=B07STGHZK8&pd_rd_r=22b1c781-7b88-4a93-8e2b-05d264e57995&pd_rd_w=KyHld&pd_rd_wg=N7z1b&pf_rd_p=7dfda093-2878-4f76-b689-190b84dc4de1&pf_rd_r=WYX9NM3CWA3QFAV29VQS&psc=1&refRID=RG6TG42JGPQ209NZH377",
+        "urlable": true
+      },
+	  {
+        "name": "AMD AM4 A6 9500",
+        "specs": "3,5ghz clock speed, 1mb cache",
+        "price": "R$410",
+        "site": "amazon.com.br",
+        "url": "https://www.amazon.com.br/Processador-Amd-A6-9500-3-5-Cache/dp/B074BGXW9T/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=processador+amd+am4&qid=1623161180&sr=8-1",
+        "urlable": true
+      }, 
+	  {
+        "name": "AMD AM4 A10-9700",
+        "specs": "3,5ghz clock speed, quad-core, 2mb cache",
+        "price": "R$690",
+        "site": "amazon.com.br",
+        "url": "https://www.amazon.com.br/Processador-AMD-3-5GHz-AD9700AGABBOX-Gera%C3%A7%C3%A3o/dp/B074B856CD/ref=sr_1_3?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=processador+amd+am4&qid=1623162783&sr=8-3",
+        "urlable": true
+      },
+	  {
+        "name": "AMD AM4 A6 9600",
+        "specs": "3,4ghz clock speed, DDR4-SDRAM, quad-core",
+        "price": "R$610",
+        "site": "amazon.com.br",
+        "url": "https://www.amazon.com.br/Processador-AMD-9600-AM4-AD9600AGABBOX/dp/B074BCFV49/ref=sr_1_3?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1GN74YUSN1ILA&dchild=1&keywords=amd+am4+processador&qid=1623164875&sprefix=AMD+am4+process%2Caps%2C229&sr=8-3",
+        "urlable": true
+      }],
+    "ram":[
+      {
+        "name": "HyperX Fury (8gb)",
+        "specs": "8gb DDR4, 2.666mhz clock speed",
+        "price": "R$400",
+        "site": "amazon.com.br",
+        "url": "https://www.amazon.com.br/HX426C16FB38-Mem%C3%B3ria-HyperX-2666Mhz-desktop/dp/B07WD5VKTS/ref=sr_1_2?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=ddr4+ram+8rb+pc&qid=1623165943&sr=8-2",
+        "urlable": true
+      },
+	  {
+        "name": "HyperX Fury (16gb)",
+        "specs": "16gb DDR4, 2.666mhz clock speed",
+        "price": "R$745",
+        "site": "amazon.com.br",
+        "url": "https://www.amazon.com.br/Memoria-Desktop-2666mhz-Hx426c16fb3-16/dp/B07WF9MD3Q/ref=sr_1_4?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=ddr4+ram+16rb+pc&qid=1623167399&sr=8-4",
+        "urlable": true
+      },
+	  {
+        "name": "Kingston HyperX Fury",
+        "specs": "8gb DDR4, 2.400mhz clock speed",
+        "price": "R$402",
+        "site": "amazon.com.br",
+        "url": "https://www.amazon.com.br/Mem%C3%B3ria-Kingston-HyperX-2400MHz-HX424C15FB2/dp/B01D8U2BKA/ref=sr_1_6?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=ddr4+ram+8rb+pc&qid=1623167709&sr=8-6",
+        "urlable": true
+      },
+	  {
+        "name": "Kingston KCP424NS8/8",
+        "specs": "8gb DDR4, 2.400mhz clock speed",
+        "price": "R$390",
+        "site": "amazon.com.br",
+        "url": "https://www.amazon.com.br/Memoria-Kingston-KCP424NS8-2400MHZ-288-PIN/dp/B01NHED3D4/ref=sr_1_19?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=ddr4+ram+8rb+pc&qid=1623168330&sr=8-19",
+        "urlable": true
+      }],
+    "ssd":[
+	  {
+        "name": "Adata Swordfish",
+        "specs": "500gb",
+        "price": "R$530",
+        "site": "amazon.com.br",
+        "url": "https://www.amazon.com.br/500gb-Pcie-Adata-Swordfish-Aswordfish-500g-c/dp/B08976TPMP/ref=pd_sbs_4/136-4725880-8076020?pd_rd_w=fhmhz&pf_rd_p=2b68fc86-1a28-4471-b574-e81acc03ba5c&pf_rd_r=ZCMEH7G4SNS47SCPX9PJ&pd_rd_r=5565bcc1-2867-4455-afc1-39b65b6a65b9&pd_rd_wg=Ac2Hs&pd_rd_i=B08976TPMP&psc=1",
+        "urlable": true
+      },
+	  {
+        "name": "Crucial P2",
+        "specs": "500gb, 2,4gb/s",
+        "price": "R$570",
+        "site": "amazon.com.br",
+        "url": "https://www.amazon.com.br/Crucial-P2-250-GB-500/dp/B086BGWNY8/ref=sr_1_4?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=22J7FS0M90CAD&dchild=1&keywords=ssd+500gb&qid=1623168804&sprefix=ssd+500%2Caps%2C238&sr=8-4",
+        "urlable": true
+      },
+	  {
+        "name": "Western Digital",
+        "specs": "480gb",
+        "price": "R$490",
+        "site": "amazon.com.br",
+        "url": "https://www.amazon.com.br/SSD-Green-M-2-2280-4800GB/dp/B07KYDYKQP/ref=sr_1_17?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=22J7FS0M90CAD&dchild=1&keywords=ssd+500gb&qid=1623168804&sprefix=ssd+500%2Caps%2C238&sr=8-17",
+        "urlable": true
+      },
+	  {
+        "name": "Adata XPG Gammix",
+        "specs": "500gb",
+        "price": "R$650",
+        "site": "amazon.com.br",
+        "url": "https://www.amazon.com.br/CRUCIAL-500GB-Micron-CT500P1SSD8/dp/B07J2WBKXF/ref=sr_1_13_sspa?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=ssd+500gb&qid=1623169505&s=computers&sr=1-13-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExTUpaSENTNkw1R1A4JmVuY3J5cHRlZElkPUEwODg4NjY1M00xTldJR1YyRko0WCZlbmNyeXB0ZWRBZElkPUEwMjUyNjIwMTNFTkNNSVFQQVNQSCZ3aWRnZXROYW1lPXNwX210ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=",
+        "urlable": true
+      }],
+    "gpu":[
+	  {
+        "name": "SIZHINAI",
+        "specs": "4gb vram, 1ghz clock speed, pci-e interface",
+        "price": "R$450",
+        "url": "https://www.amazon.com.br/SIZHINAI-gr%C3%A1fica-Desktop-Express-compat%C3%ADvel/dp/B093PXSDJZ/ref=sr_1_37?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=gpu&qid=1623169592&sr=8-37",
+        "urlable": true
+      },
+	  {
+        "name": "NVIDIA GEFORCE GT",
+        "specs": "4GB 64BITS",
+        "price": "R$780",
+        "site": "amazon.com.br",
+        "url": "https://www.amazon.com.br/NVIDIA-GEFORCE-64BITS-PROFILE-INCLUSO/dp/B08NWF34B4/ref=sr_1_10?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=gpu&qid=1623171475&s=computers&sr=1-10",
+        "urlable": true
+      }],
+    "psu":[
+	  {
+        "name": "Aerocool (400watts)",
+        "specs": "400watts",
+        "price": "R$267",
+        "site": "amazon.com.br",
+        "url": "https://www.amazon.com.br/Fonte-400W-AEROCOOL-Acess%C3%B3rios-Computador/dp/B07D4MFF78/ref=sr_1_5?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=fonte&qid=1623172455&s=computers&sr=1-5",
+        "urlable": true
+      },
+	  {
+        "name": "Aerocool (350watts)",
+        "specs": "350watts",
+        "price": "R$150",
+        "site": "amazon.com.br",
+        "url": "https://www.amazon.com.br/Fonte-350W-AEROCOOL-Acess%C3%B3rios-Computador/dp/B0754JQGYD/ref=sr_1_7?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=fonte&qid=1623172455&s=computers&sr=1-7",
+        "urlable": true
+      },
+	  {
+        "name": "Corsair 2",
+        "specs": "550watts",
+        "price": "R$440",
+        "site": "amazon.com.br",
+        "url": "https://www.amazon.com.br/Fonte-Corsair-550W-Bronze-CX550/dp/B07Z8PM6RP/ref=sr_1_4?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=fonte&qid=1623172455&s=computers&sr=1-4",
+        "urlable": true
+      },
+	  {
+        "name": "Corsair 1",
+        "specs": "550watts",
+        "price": "R$430",
+        "site": "amazon.com.br",
+        "url": "https://www.amazon.com.br/Fonte-corsair-450w-bronze-cv550/dp/B0842T1TQ8/ref=sr_1_6?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=fonte&qid=1623172455&s=computers&sr=1-6",
+        "urlable": true
+      }],
+    "coo":[
+	  {
+        "name": "Cooler Master + IMPLASTEC",
+        "specs": "3 pinos",
+        "price": "R$100",
+        "site": "amazon.com.br",
+        "url": "",
+        "urlable": false
+      },
+	  {
+        "name": "C3Tech + IMPLASTEC",
+        "specs": "4 pinos",
+        "price": "R$45",
+        "site": "amazon.com.br",
+        "url": "",
+        "urlable": false
+      }],
+    "cas":[
+	  {
+        "name": "Fortrek",
+        "specs": "31 x 41 x 21",
+        "price": "R$139",
+        "site": "amazon.com.br",
+        "url": "https://www.amazon.com.br/Gabinete-Fortrek-Sc501Bk-Acess%C3%B3rios-Computador/dp/B07N25CJFH/ref=sr_1_9?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=gabinete&qid=1623174546&s=computers&sr=1-9",
+        "urlable": true
+      },
+	  {
+        "name": "Aigo Darkflash",
+        "specs": "50 x 49 x 31",
+        "price": "R$265",
+        "site": "amazon.com.br",
+        "url": "https://www.amazon.com.br/Gabinete-Aigo-Darkflash-21-Lateral/dp/B08HR31H2H/ref=sr_1_5?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=gabinete&qid=1623174546&s=computers&sr=1-5",
+        "urlable": true
+      },
+	  {
+        "name": "Mancer Stealth",
+        "specs": "42 x 41 x 24",
+        "price": "R$175",
+        "site": "amazon.com.br",
+        "url": "https://www.amazon.com.br/Gabinete-Mancer-Stealth-Acrilico-Mcr-st01-fl/dp/B08KJLGJ59/ref=sr_1_18?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=gabinete&qid=1623174546&s=computers&sr=1-18",
+        "urlable": true
+      }],
+	"pbd":[
+	  {
+        "name": "PC Intel (Windows 10 <b><i>incluso</i></b>)",
+        "specs": "intel i5 3,1ghz, 16gb DDR3-SDRAM, 500gb HD",
+        "price": "R$1.960",
+        "site": "amazon.com.br",
+        "url": "https://www.amazon.com.br/Computador-Core-3470-500gb-Mem%C3%B3ria/dp/B093YHSVDM/ref=sr_1_11?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=cpu&qid=1623163065&sr=8-11",
+        "urlable": true
+      },
+	  {
+        "name": "PC Intel 2",
+        "specs": "intel i5 3,2ghz, 8gb DDR3-SDRAM, 500gb HD",
+        "price": "R$1.675",
+        "site": "amazon.com.br",
+        "url": "https://www.amazon.com.br/Computador-Intel-500GB-Windows-Desktop/dp/B08HR96MHP/ref=pd_day0_11/136-4725880-8076020?pd_rd_w=FAVgZ&pf_rd_p=f8fbb395-09a0-46a4-a17c-8f7cd5155e6a&pf_rd_r=HNDYNM3G13CJWEYNHCS0&pd_rd_r=5f9d2120-3a0f-4e03-89fa-fa77fdb784e8&pd_rd_wg=uwqGf&pd_rd_i=B08HR96MHP&psc=1",
+        "urlable": true
+      }]
+  },
+  "template": {
+    "name": "",
+    "specs": "",
+    "price": "",
+    "site": "",
+    "url": "",
+    "urable": true
+  }
+}

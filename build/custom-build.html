@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="
+            width=device-width,
+            initial-scale=1.0
+          "/>
+    <style>
+      .home {
+        padding: 5px 5px;
+      }
+      .form-table {
+        border: 3px solid black;
+      }
+    </style>
+    <!--script> this.loadAPIs(); </script-->
+    <title> Build customizada & Calculadora </title>
+  </head>
+  <body>
+    <h1> <center> <i style="font-weight:bold;"> <big> Build customizada e Calculação de preço </big> </i> </center> </h1>
+      <hr/>
+	  <div class="custom-up-file">
+	    <a href="#up-file"> &#8618; Envie uma <i>build</i> customizada em <code style="font-size:15px;">.json</code></a>
+	    <br/> <br/>
+	    <h2> <big> Faça uma <i>build</i> customizada </big> </h2>
+		    <div>
+				<blockquote id="parts">
+					<h3 id="mbd-head"> Placa-Mãe (Motherboard) </h3>
+					<form id="mbd"></form>
+					<h3 id="cpu-head"> Processador (Central Processing Unit: CPU) </h3>
+					<form id="cpu"></form>
+					<h3 id="ram-head"> Memória (Random Access Memory: RAM) </h3>
+					<form id="ram"></form>
+					<h3 id="ssd-head"> Alojamento (Solid State Drive: SSD) </h3>
+					<form id="ssd"></form>
+					<h3 id="gpu-head"> Placa de Vídeo (Graphical Processing Unit: GPU) </h3>
+					<form id="gpu"></form>
+					<h3 id="psu-head"> Suprimento (Power Supply) </h3>
+					<form id="psu"></form>
+					<h3 id="coo-head"> Ventilação e Pasta Térmica (Cooler & Thermal Paste) </h3>
+					<form id="coo"></form>
+					<h3 id="cas-head"> Gabinete (Case) </h3>
+					<form id="cas"></form>
+					<h3 id="pbd-head"> <i>Computadores pré-montados </i>(Builds) </h3>
+					<form id="pbd"></form>
+				</blockquote>
+	      </div>
+	      <script src="makebuild.js"></script>
+        <script>
+          makeCustomForm();
+        </script>
+		<br/>
+		<div id="choose-input-type">
+			<h3> Escolha o tipo de envio: </h3>
+			<form id="choose-input-type">
+				<blockquote>
+					  <div> <input type="radio" id="all-pieces" name="input-type" value="all-pieces"
+							 checked>
+					  <label for="all-pieces"> Todas as peças </label> </div>
+					  <div> <input type="radio" id="pre-built" name="input-type" value="pre-built">
+					  <label for="dewey"> Pré-montado </label> </div>
+				</blockquote> 
+			</form>
+		</div>
+      <br/>
+      <span class="download-and-submit">
+        <a id="download-json" style="display:none;"> </a>
+        <button type="button" onclick="
+          downloadJSON();
+        ">
+          Baixe o arquivo em <code style="font-size:13px;">.json</code>
+        </button>
+        <button type="button" onclick="
+			computeTotalPrice();
+        ">
+          Calcule o preço total da <i>build</i>*
+        </button>
+        <button type="button" onclick="
+          createJSONFromQuery();
+        ">
+          Salve essa <i>build</i> para o <i>cache</i>
+        </button>
+        <div id="status"></div>
+      </span>
+	  </div>
+	  <div class="up-file" id="up-file">
+	    <br/> <br/>
+	    <h2 id="upload-header"> Envie uma <i>build</i> customizada em <code style="font-size:24px;">.json</code></h2>
+		<div>
+			<label for="json"> Selecione o arquivo em <code> .json </code>: </label>
+			<input type="file" accept=".json" style="/*display:none;*/" id="upload" value="Import" multiple="false"/>
+		</div>
+		<div> <br/>
+		  <span id="upload-buttons">
+  			<button style="margin-left:10px; width:120px; height:22px;" id="jsonup" onclick="
+				uploadJSON();
+  			"> Envie </button>
+  			<button style="margin-left:10px; width:120px; height:22px;" id="jsonsend" onclick="
+  			  viewJSON();
+  			"> Visualize </button>
+  			<!--button style="margin-left:10px; height:22px;"> Calcule e integre o preço total </button-->
+  			<button style="margin-left:10px; height:22px;" onclick="
+				carryToCache();
+			"> Carregar para o cache </button>
+  			</span>
+		</div>
+		<div id="upload-status"> </div>
+    </div>
+    <br/> <br/>
+	<hr/>
+  </body>
+  <footer>
+    <div id="notice">
+      * <i>Utilize pontos ao invés de vírgulas para demarcar casas decimais e não separe o número a cada três dígitos</i>.
+    </div> <br/>
+	<style>
+	.note-header {
+		font-size:20px;
+		color:#ff0000;
+	}
+	.note-body {
+		font-size:20px;
+	}
+	</style>
+	<i class="note-header">Nota</i>:<i class="note-body"> O botão "<b>Visualize</b>" envia uma build vinda de "<b>Envie uma build customizada em .json</b>" e preenche "<b>Faça uma build customizada</b>". É possível integrar os preços clicando em "<b>Calcule o preço total da <i>build</i></b>" depois de visualizar.
+	<br/> <br/> <br/>
+    <span>
+        <a href="../index.html"> <button class="home">
+          Voltar para o início <big style="font-size:20px;"> &#8634; </big>
+        </button> </a> <button class="home" id="clear-cache" onclick="
+		cachedQuery = new Array();
+		JSONFILE.ID = new Array();
+		JSONFILE.upload = new Object();
+		">
+			Limpar o cache
+		</button>
+		<button class="home" onclick="
+			for (let part of parts) {
+				for (let i = 0; i < 4; i++) {
+					document.querySelectorAll(`#${part} input`)[i].value = '';
+				}
+			}
+			for (let i = 0; i < 4; i++) {
+					document.querySelectorAll(`#pbd input`)[i].value = '';
+				}
+		"> Limpar as formas
+		</button>
+		<button class="home" onclick="
+  		update.hasHyperlinked = !update.hasHyperlinked;
+  		UpdateView();
+		">
+		  Hyperlink URLs
+		</button>
+		<style id="show-table">
+		  .form-table {
+		    /* display:none; */
+		  }
+		</style>
+		<button class="home" onclick="
+		  update.isSimpleView = !update.isSimpleView;
+		  UpdateView();
+		">
+		  Simplifique
+		</button>
+	</span>
+    <div class="copyright"> Criado por <i> <a href="https://www.github.com/ObserveOfMath"> Mateus Santiago Oliveira</a></i>, © 2021. </div>
+  </footer>
+</html>
