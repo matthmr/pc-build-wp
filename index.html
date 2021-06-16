@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="
+            width=device-width,
+            initial-scale=1.0
+          "/>
+    <link rel="stylesheet" href="style.css"/>
+    <title> Orçamento do PC </title>
+    <style>
+      /*  https://stackoverflow.com/questions/56758098/how-to-position-detail-marker-to-come-after-summary */
+      table, th, td {
+        border: 1px solid black;
+        /* border-collapse: collapse; */
+      }
+      details>summary {
+        list-style: none;
+      }
+      summary::-webkit-details-marker {
+        display: none
+      }
+      summary::after {
+        content: ' ►';
+      }
+      details[open] summary:after {
+        content: " ▼";
+      }
+    </style>
+    <script type="text/javascript" src="./script.js"></script>
+  </head>
+  <body>
+    <h1> <center> <i style="font-weight:bold;"> <big> Orçamento do PC por partes </big> </i> </center> </h1> <hr/>
+    <h2>
+      <p style="text-align:justify;"> <i class="note-header"> Nota </i>: <i class="note-body"> Essa webpage é o resultado de diversos websites compilados em combinações inteiras e parciais. Todas as referências aos websites pesquisados estão <a href="./sources.html"> aqui</a>. </i> </p>
+    </h2> <br/> <br/>
+    <h2> <i> Partes de um computador (clique para expandir) </i> </h2>
+    <span> <button onclick="
+      let detailsTag = document.getElementsByTagName('details');
+      for (tag of detailsTag) {
+        tag.setAttribute('open', 'true');
+      }
+    "> Expandir todos </button>
+    <a href="#contract-all"> Contrair todos </a>
+    <ul>
+      <li> <details> <summary> Placa-Mãe (Motherboard) </summary>
+          <blockquote id="mbd"></blockquote>
+      </details> </li>
+      <li> <details> <summary> Processador (Central Processing Unit: CPU)
+      </summary>
+        <blockquote id="cpu"></blockquote>
+      </details> </li>
+      <li> <details> <summary> Memória (Random Access Memory: RAM)
+      </summary>
+        <blockquote id="ram"></blockquote>
+      </details> </li>
+      <li> <details> <summary> Alojamento (Solid State Drive: SSD)
+      </summary>
+        <blockquote id="ssd"></blockquote>
+      </details> </li>
+      <li> <details> <summary> Placa de Vídeo (Graphical Processing Unit: GPU)
+      </summary>
+      <!-- GPU: https://www.amazon.com.br/Placa-V%C3%ADdeo-AFOX-GeForce-AF750TI-2048D5H5-V7/dp/B07Z5KBMSF/ref=sr_1_53?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=gpu&qid=1623169592&sr=8-53 -->
+		  <div style="font-weight:bold;text-align:justify;">
+		   <i class="note-header">Nota</i> <span style="font-size:30px">:</span> GPUs estão bem caras recentemente devido à escassez dessas no mercado, logo os preços estão bastantes inflados mesmo para padrões brasileiros.
+		   <div style="font-weight:bold;">
+		     Um Computador não necessariamente necessita de uma GPU para funcionar, contudo, sem uma GPU a inteiridade de processamento gráfico (ex: Renderização, Streaming, Gameplay, ...) fica para a CPU.
+		   </div>
+	    </div>
+        <blockquote id="gpu"></blockquote>
+      </details> </li>
+      <li> <details> <summary> Suprimento (Power Supply)
+      </summary>
+        <blockquote id="psu"></blockquote>
+      </details> </li>
+      <li> <details> <summary> Ventilação e Pasta Térmica (Cooler & Thermal Paste)
+      </summary>
+	    <div style="font-weight:bold;text-align:justify;">
+		   <i class="note-header">Nota</i> <span style="font-size:30px">:</span> O preço é total (Cooler + Pasta).
+		</div>
+        <blockquote id="coo"></blockquote>
+      </details> </li>
+      <li> <details> <summary> Gabinete (Case)
+      </summary>
+        <blockquote id="cas"></blockquote>
+      </details> </li>
+	  <li> <details> <summary> <i>Computadores pré-montados</i> (Builds)
+      </summary>
+        <blockquote id="pbd"></blockquote>
+      </details> </li>
+    </ul>
+    <button id="contract-all" onclick="
+      let detailsTag = document.getElementsByTagName('details');
+      for (tag of detailsTag) {
+        tag.removeAttribute('open');
+      }
+    "> Contrair todos </button>
+    <script>
+      makeTableFromJSON();
+    </script>
+    <br/> <br/> <br/> <hr/>
+  </body>
+  <footer>
+    <a href="./build/custom-build.html">
+      <button class="custom-build-button"> Verifique o preço & especificações de uma <i> build </i> customizada </button>
+    </a>
+    <div class="copyright"> Criado por <i> <a href="https://www.github.com/ObserveOfMath"> Mateus Santiago Oliveira</a></i>, © 2021. </div>
+    <div id="debug"> </div>
+  </footer>
+</html>

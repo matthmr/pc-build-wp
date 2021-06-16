@@ -1,0 +1,15 @@
+.note-header {
+  font-size:20px;
+  color:#ff0000;
+}
+.note-body {
+  font-size:20px;
+}
+.pc-parts-table {
+  table-layout: fixed;
+  word-wrap: break-word;
+  width: 100%;
+}
+.custom-build-button {
+  padding: 5px 5px;
+}
